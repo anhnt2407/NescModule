@@ -39,7 +39,8 @@ public class NescMain
         //String filename = "/media/pessoal/Doutorado/medicoes/SplitControl/SplitControl_start/RadioAppC.nc";
         //String filename = "/media/pessoal/Doutorado/medicoes/SplitControl/SplitControl_start/Radio.nc";
         //String filename = "/media/pessoal/Doutorado/medicoes/Exemplo/atribuir/ExampleM.nc";
-        String filename = "/opt/tinyos-2.x/apps/Blink/BlinkAppC.nc";
+        //String filename = "/opt/tinyos-2.x/apps/Blink/BlinkAppC.nc";
+        String filename = "/opt/idea4wsn/1/Blink/BlinkAppC.nc";
 
         //process( filename );
 
@@ -68,6 +69,14 @@ public class NescMain
                         System.out.println( " " + method.getFunctionName() );
                     }
                 }
+            }
+            
+            System.out.println( "name: " + module.getName() );
+            
+            for( Function method : module.getFunctions() )
+            {
+                System.out.print( " " + method.getInterfaceNick() );
+                System.out.println( "." + method.getFunctionName() );
             }
         }
     }

@@ -18,27 +18,33 @@ public class Instruction {
         // do nothing
     }
 
-    public int getLineNumber() {
+    public int getLineNumber()
+    {
         return lineNumber;
     }
 
-    public void setLineNumber(int line) {
+    public void setLineNumber( int line )
+    {
         this.lineNumber = line;
     }
 
-    public String getType() {
+    public String getType()
+    {
         return type;
     }
 
-    public void setType(String type) {
+    public void setType( String type )
+    {
         this.type = type;
     }
 
-    public String getText() {
+    public String getText()
+    {
         return text;
     }
 
-    public void setText(String text) {
+    public void setText( String text )
+    {
         this.text = text;
     }
     
